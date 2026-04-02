@@ -613,24 +613,20 @@ main {
 	padding: 4px 10px;
 }
 
-/* Card responsive styles */
-.card-responsive-name {
-	font-weight: 600;
-	font-size: 1rem;
-	color: var(--text-color);
-}
-
-.card-responsive-status-title {
+/* Fail reason */
+.fail-reason-text {
 	font-size: 0.75rem;
-	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	margin-bottom: 4px;
+	color: var(--danger-color);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 320px;
 }
 
-.card-responsive-checkbox {
-	width: 20px;
-	height: 20px;
+/* Table responsive wrapper */
+.table-responsive {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 /* Hide scrollbars but keep functionality */
