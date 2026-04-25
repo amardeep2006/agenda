@@ -39,9 +39,9 @@
 - Scheduling with configurable priority, concurrency, repeating and persistence of job results.
 - Scheduling via cron or human readable syntax.
 - Event backed job queue that you can hook into.
-- [Agenda-rest](https://github.com/agenda/agenda-rest): optional standalone REST API.
+- [Agenda-rest](https://github.com/agenda/agenda/tree/main/packages/agenda-rest): optional standalone REST API.
 - [Inversify-agenda](https://github.com/lautarobock/inversify-agenda) - Some utilities for the development of agenda workers with Inversify.
-- [Agendash](https://github.com/agenda/agendash): optional standalone web-interface.
+- [Agendash](https://github.com/agenda/agenda/tree/main/packages/agendash): optional standalone web-interface.
 
 ### Feature Comparison
 
@@ -989,7 +989,7 @@ agenda.define('audit-log', async job => {
 
 ## Persistent Job Logging
 
-Agenda can persist structured job lifecycle events (start, success, fail, complete, retry, etc.) to the backend's database. This is useful for auditing, debugging, and monitoring — events can be queried programmatically via `agenda.getLogs()` or viewed in [Agendash](https://github.com/agenda/agendash).
+Agenda can persist structured job lifecycle events (start, success, fail, complete, retry, etc.) to the backend's database. This is useful for auditing, debugging, and monitoring — events can be queried programmatically via `agenda.getLogs()` or viewed in [Agendash](https://github.com/agenda/agenda/tree/main/packages/agendash).
 
 Logging is **disabled by default** and must be explicitly enabled via the `logging` option.
 
@@ -1735,9 +1735,9 @@ choose how they would like to use it. That being said, you can check out the
 
 ### Web Interface?
 
-Agenda itself does not have a web interface built in but we do offer stand-alone web interface [Agendash](https://github.com/agenda/agendash):
+Agenda itself does not have a web interface built in but we do offer stand-alone web interface [Agendash](https://github.com/agenda/agenda/tree/main/packages/agendash):
 
-<a href="https://raw.githubusercontent.com/agenda/agendash/master/job-details.png"><img src="https://raw.githubusercontent.com/agenda/agendash/master/job-details.png" style="max-width:100%" alt="Agendash interface"></a>
+<a href="https://raw.githubusercontent.com/agenda/agenda/main/packages/agendash/agendash.png"><img src="https://raw.githubusercontent.com/agenda/agenda/main/packages/agendash/agendash.png" style="max-width:100%" alt="Agendash interface"></a>
 
 ### Choosing a Backend
 
